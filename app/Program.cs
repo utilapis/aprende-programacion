@@ -8,8 +8,12 @@ float precioRemera = 320.0F;
 float precioPantalon = 560.0F;
 
 // Cliente compra
-int cantidadRemeras = 15;
-int cantidadPantalones = 5;
+Console.Write("Ingrese la cantidad de remeras:");
+string line = Console.ReadLine();
+int cantidadRemeras = int.Parse(line);
+Console.Write("Ingrese la cantidad de pantalones:");
+line = Console.ReadLine();
+int cantidadPantalones = int.Parse(line);
 
 // Subtotales
 float subtotalRemera = precioRemera * cantidadRemeras;
@@ -27,3 +31,4 @@ Console.WriteLine($"------------------------------------------------------------
 Console.WriteLine($"Subtotal: {subtotal}");
 Console.WriteLine($"Iva: {IVA}%");
 Console.WriteLine($"Total: {total}");
+Console.ReadKey();
